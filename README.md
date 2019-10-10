@@ -1,2 +1,2 @@
 # MinervaPets
-Aplicativo móvel que visa fornecer ferramentas para auxiliar nos cuidados de animais de estimação. 
+Aplicativo móvel que visa fornecer ferramentas para auxiliar nos cuidados dos animais de estimação. 
