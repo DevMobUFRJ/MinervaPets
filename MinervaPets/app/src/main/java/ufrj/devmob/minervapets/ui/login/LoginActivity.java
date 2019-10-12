@@ -5,6 +5,7 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -22,6 +23,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import ufrj.devmob.minervapets.MainActivity;
 import ufrj.devmob.minervapets.R;
 import ufrj.devmob.minervapets.ui.login.LoginViewModel;
 import ufrj.devmob.minervapets.ui.login.LoginViewModelFactory;
@@ -123,6 +125,8 @@ public class LoginActivity extends AppCompatActivity {
         String welcome = getString(R.string.welcome) + model.getDisplayName();
         // TODO : initiate successful logged in experience
         Toast.makeText(getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
+
+        startActivity(new Intent(getBaseContext(), MainActivity.class));
     }
 
     private void showLoginFailed(@StringRes Integer errorString) {
